@@ -14,6 +14,12 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+    <string>此 App 需要訪問您的位置，以提供您當地的各項地圖資訊等相關服務。我們保證您的位置資訊只會用於此 App 功能，絕不會被外洩或濫用。</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>此 App 需要訪問您的位置，以提供您當地的各項地圖資訊等相關服務，並在背景中更新您的位置資訊。我們保證您的位置資訊只會用於此 App 功能，絕不會被外洩或濫用。</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>此 App 需要訪問您的位置，以提供您當地的各項地圖資訊等相關服務務，並在背景中更新您的位置資訊。我們保證您的位置資訊只會用於此 App 功能，絕不會被外洩或濫用。為了能在背景中持續更新您的位置資訊，請授予一直使用權限。</string>
 	<key>CFBundleName</key>
 	<string>gl_taipeipain_flutter</string>
 	<key>CFBundlePackageType</key>

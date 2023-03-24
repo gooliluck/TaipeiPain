@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gl_taipeipain_flutter/map/MyMap.dart';
-
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:gl_taipeipain_flutter/model/RubbishTruck.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -11,12 +12,17 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (context) => RubbishTrucksBloc()),
+      ],
+      child: MaterialApp(
+        title: '台北痛',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: MyMap(),
       ),
-      home: MyMap(),
     );
   }
 }
